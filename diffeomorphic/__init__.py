@@ -26,10 +26,10 @@ from .diffeomorphic import transform_image
 from .diffeomorphic_movie import transform_movie
 from .diffeomorphic_movie_warpshift import transform_warpshift
 
-# Dynamically retrieve version from setuptools-scm
+# Dynamically retrieve version from git tags
 try:
     from ._version import __version__
-except ModuleNotFoundError:
-    __version__ = "dev"  # Fallback for development mode
+except ImportError:
+    __version__ = "0.1.0"  # Default version if not in a proper install
 
 __all__ = ['transform_image', 'transform_movie', 'transform_warpshift']
