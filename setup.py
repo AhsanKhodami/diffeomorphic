@@ -4,7 +4,11 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setup(    name="diffeomorphic",
-    version="0.1.0",
+    use_scm_version={
+        "write_to": "diffeomorphic/_version.py",
+        "write_to_template": '__version__ = "{version}"',
+    },
+    setup_requires=["setuptools_scm"],
     author="Mohammad Ahsan Khodami",
     author_email="ahsan.khodami@gmail.com",
     description="Diffeomorphic transformations for image and video morphing in psychological experiments",    long_description=long_description,

@@ -26,5 +26,10 @@ from .diffeomorphic import transform_image
 from .diffeomorphic_movie import transform_movie
 from .diffeomorphic_movie_warpshift import transform_warpshift
 
-__version__ = "0.1.0"
+# Dynamically retrieve version from setuptools-scm
+try:
+    from ._version import __version__
+except ModuleNotFoundError:
+    __version__ = "dev"  # Fallback for development mode
+
 __all__ = ['transform_image', 'transform_movie', 'transform_warpshift']
