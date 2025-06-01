@@ -1,5 +1,7 @@
 # Diffeomorphic
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15569218.svg)](https://doi.org/10.5281/zenodo.15569218)
+
 A Python package for creating diffeomorphically transformed images and videos for psychological experiments.
 
 ## Overview
@@ -8,7 +10,7 @@ Diffeomorphic implements diffeomorphic transformations for image and video morph
 
 Stojanoski, B., & Cusack, R. (2014). Time to wave good-bye to phase scrambling: Creating controlled scrambled images using diffeomorphic transformations. Journal of Vision, 14(12), 6. doi:10.1167/14.12.6
 
-This Python package was developed by Mohammad Ahsan Khodami, based on the original algorithms described in the paper by Stojanoski & Cusack.
+This Python package was developed by [Mohammad Ahsan Khodami](https://ahsankhodami.github.io), based on the original algorithms described in the paper by Stojanoski & Cusack.
 
 ## Installation
 
